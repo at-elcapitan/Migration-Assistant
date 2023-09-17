@@ -18,14 +18,14 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>0</width>
-    <height>0</height>
+    <width>551</width>
+    <height>481</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>16000</width>
-    <height>16000</height>
+    <width>551</width>
+    <height>481</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -56,6 +56,9 @@
       <width>511</width>
       <height>192</height>
      </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
     </property>
     <property name="html">
      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -97,12 +100,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     </item>
     <item>
      <property name="text">
-      <string>2.2.1</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>2.0 - 2.2</string>
+      <string>2.0 - 2.2.1</string>
      </property>
     </item>
     <item>
@@ -142,18 +140,18 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <rect>
       <x>20</x>
       <y>160</y>
-      <width>101</width>
+      <width>91</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>Find user list</string>
+     <string>Load JSON</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnMigrate">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>240</x>
       <y>160</y>
       <width>81</width>
       <height>31</height>
@@ -172,7 +170,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <property name="geometry">
      <rect>
       <x>340</x>
-      <y>170</y>
+      <y>160</y>
       <width>191</width>
       <height>25</height>
      </rect>
@@ -183,25 +181,28 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <property name="text">
      <string comment="0"/>
     </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
    </widget>
    <widget class="QLineEdit" name="username">
     <property name="geometry">
      <rect>
       <x>340</x>
-      <y>110</y>
+      <y>100</y>
       <width>191</width>
       <height>25</height>
      </rect>
     </property>
     <property name="text">
-     <string>posgres</string>
+     <string>postgres</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
       <x>340</x>
-      <y>150</y>
+      <y>140</y>
       <width>71</width>
       <height>17</height>
      </rect>
@@ -214,7 +215,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <property name="geometry">
      <rect>
       <x>340</x>
-      <y>90</y>
+      <y>80</y>
       <width>71</width>
       <height>17</height>
      </rect>
@@ -228,7 +229,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <rect>
       <x>340</x>
       <y>40</y>
-      <width>191</width>
+      <width>131</width>
       <height>25</height>
      </rect>
     </property>
@@ -252,14 +253,53 @@ li.checked::marker { content: &quot;\2612&quot;; }
    <widget class="QPushButton" name="btnConnect">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>130</x>
       <y>160</y>
-      <width>81</width>
+      <width>91</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>Connect</string>
+     <string>DB Connect</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openDir">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>40</y>
+      <width>21</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="port">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>40</y>
+      <width>51</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5432</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>20</y>
+      <width>31</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Port</string>
     </property>
    </widget>
   </widget>

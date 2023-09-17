@@ -1,8 +1,14 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <jansson.h>
+#include <QFile>
+#include <QSqlQuery>
+#include <QSqlError>
+#include <QJsonArray>
 #include <QMainWindow>
+#include <QJsonObject>
+#include <QFileDialog>
+#include <QJsonDocument>
 #include <QtSql/QSqlDatabase>
 
 QT_BEGIN_NAMESPACE
@@ -21,6 +27,10 @@ private slots:
     void on_btnFind_clicked();
 
     void on_btnConnect_clicked();
+
+    void on_openDir_clicked();
+
+    void on_btnMigrate_clicked();
 
 private:
     Ui::MainWindow *ui;
