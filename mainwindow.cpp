@@ -175,7 +175,7 @@ void MainWindow::on_btnMigrate_clicked()
         QJsonArray outerArray = jdata.value(key).toArray();
         for (int x = 0; x != outerArray.size(); x++) {
             QJsonArray innerArray = outerArray[x].toArray();
-            QString query = "INSERT INTO music_data (music_name, music_url, provider, user_id) VALUES ('" + innerArray[0].toString() + "', '" + innerArray[1].toString() + "', 'YT_OLD', '" + key + "')";
+            QString query = "INSERT INTO music_data (music_name, music_url, user_id) VALUES ('" + innerArray[0].toString() + "', '" + innerArray[1].toString() + "', '" + key + "')";
             progressBarPos += cost;
             ui->progressBar->setValue(progressBarPos);
             db.transaction();
